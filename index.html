@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> TTP Coding Challenge #2</title>
+</head>
+<body onload= time();>
+
+<h1> My name is Lubna Khalid and my favorite hobby is reading books. The current time is 
+<span id= 'time'></span></h1>
+    <script type="text/javascript">
+   
+  
+
+            setInterval(time, 1000);
+        
+        function time(){
+        var myDate = new Date();
+        // get hour value.
+        var hours = myDate.getHours();
+        var minutes = myDate.getMinutes();
+        var myTime = hours + " " + " : " + minutes + 
+            " : " + myDate.getSeconds();
+        document.getElementById('time').innerHTML = myTime;
+    }
+    </script>
+
+
+</body>
+</html>
